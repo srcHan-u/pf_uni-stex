@@ -4,7 +4,42 @@
   <body>
     <div class="wrapper">
       @@include('html/_header.htm',{})
-      <main class="page"></main>
+      <main class="page">
+        <section class="page__first-screen first-screen">
+          <div class="first-screen__container">
+            <div class="first-screen__bg-element background-element background-element_position_xy_0-50">
+                <div class="background-element__body">
+                    <div class="background-element__item">
+                        <div class="background-element__item-shape background-element__item-shape_zero">0</div>
+                    </div>
+                    <div class="background-element__item">
+                  <div class="background-element__item-shape background-element__item-shape_procent">%</div>
+                    </div>
+                </div>
+              </div>
+            <div class="first-screen__bg-element background-element background-element_position_xy_55-100">
+                <div class="background-element__body">
+                    <div class="background-element__item">
+                        <img class="background-element__item-image" data-src="@img/home/main-screen-img_1.png" alt="image">
+                    </div>
+                    <div class="background-element__item ">
+                        <div class="background-element__item-shape background-element__item-shape_shadow"></div>
+                    </div>
+                </div>
+              </div>
+
+            <div class="first-screen__content">
+              <h1 class="first-screen__title title">
+                zero <br />
+                deposit fee
+              </h1>
+              <button type="button" class="first-screen__button button-primary">
+                <span class="button-primary__text">START</span>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
       @@include('html/_footer.htm',{})
     </div>
     @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})

@@ -1,4 +1,120 @@
 //====================================================================================================
+.header {
+    padding-top: rem(44);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(25);
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: rem(42);
+    }
+    &__actions {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: rem(15);
+    }
+
+    &__action {
+        position: relative;
+        &:not(:last-child) {
+            &::after {
+                content: "|";
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: rem(24);
+                transform: translate(10px, -3.5px);
+                color: #b7b8b9;
+            }
+        }
+    }
+
+    &__buttn {
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: math.div(17, 14);
+        text-transform: uppercase;
+        opacity: 0.7;
+        &_focus {
+            color: $mainColorGreen;
+        }
+    }
+}
+.logo {
+    max-width: rem(191);
+    min-width: rem(150);
+    &__image {
+        width: 100%;
+    }
+}
+.switch-lang {
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: math.div(17, 14);
+    text-transform: uppercase;
+    color: #ffffff;
+
+    &__body {
+        position: relative;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: rgba($color: #fff, $alpha: 0.7);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        gap: rem(5);
+        // transition: transform 0.4s ease 0s;
+        &::before {
+            color: rgba($color: #fff, $alpha: 1);
+        }
+        &._spoller-active {
+            &::before {
+                transition: transform 0.4s ease 0s;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding-top: rem(10);
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: rem(2);
+        }
+    }
+
+    &__lang {
+        text-transform: uppercase;
+        color: rgba($color: #fff, $alpha: 0.7);
+        transition: color 0.4s ease 0s;
+        display: block;
+        @media (any-hover: hover) {
+            &:hover {
+                color: rgba($color: #fff, $alpha: 1);
+            }
+        }
+    }
+}
 
 //====================================================================================================
 

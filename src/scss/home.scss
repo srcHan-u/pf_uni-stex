@@ -83,14 +83,28 @@
 .page {
     &__products {
         @include adaptiveValue("padding-top", 128, 100);
-        @include adaptiveValue("padding-bottom", 175, 100);
+        padding-bottom: rem(85);
     }
 }
 .products {
+    &__top {
+        &:not(:last-child) {
+            @include adaptiveValue("padding-bottom", 175, 100);
+        }
+    }
+    &__center {
+    }
+    &__bottom {
+    }
+}
+.top-products {
     &__container {
     }
 
     &__heading {
+        &:not(:last-child) {
+            margin-bottom: em(102, 180);
+        }
     }
 
     &__list {
@@ -110,9 +124,81 @@
     &__card {
     }
 }
+
+.center-products {
+    &__container {
+        max-width: rem(1574);
+        padding: rem(70) rem(81) rem(38) rem(81);
+        background: rgba(56, 92, 95, 0.3);
+        box-shadow: inset 1px 1px 4px #4fffca;
+        backdrop-filter: blur(20px);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__logo {
+        &:not(:last-child) {
+            margin-bottom: rem(41);
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: rem(20);
+        line-height: math.div(23, 20);
+        text-align: center;
+        max-width: rem(541);
+        &:not(:last-child) {
+            margin-bottom: rem(24);
+        }
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: rem(6);
+    }
+
+    &__item {
+        flex: 0 1 calc(20% - 60px);
+        min-height: rem(165);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        &:not(:last-child) {
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                top: 50%;
+                left: calc(100% + rem(14));
+                width: rem(1);
+                height: percent(123, 165);
+                background-color: #fff;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &__item-text {
+        font-weight: 400;
+        font-size: rem(18);
+        line-height: math.div(21, 18);
+        text-transform: uppercase;
+        color: #ebe7e5;
+    }
+}
+
 .heading-2 {
     font-weight: 700;
-    font-size: rem(180);
+    @include adaptiveValue("font-size", 180, 65);
     line-height: math.div(207, 180);
     background: radial-gradient(206.43% 206.43% at 50% -20.36%, #141e1e 0%, #0f1415 100%);
     -webkit-background-clip: text;

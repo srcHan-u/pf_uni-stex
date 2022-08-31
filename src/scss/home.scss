@@ -339,3 +339,49 @@
 }
 
 //====================================================================================================
+
+.page {
+    &__partners {
+        @include adaptiveValue("padding-top", 105, 100);
+        @include adaptiveValue("padding-bottom", 135, 100);
+    }
+}
+.partners {
+    &__container {
+        max-width: rem(1790);
+        position: relative;
+    }
+
+    &__heading {
+        &:not(:last-child) {
+            margin-bottom: em(70, 180);
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: rem(15);
+        row-gap: rem(30);
+    }
+
+    &__item {
+        // flex: 0 1 14.3%;
+        text-align: center;
+    }
+
+    &__image {
+    }
+    &__bg-element {
+    }
+}
+.heading-2 {
+}
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================

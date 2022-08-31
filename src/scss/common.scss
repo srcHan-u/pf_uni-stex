@@ -76,6 +76,14 @@
             width: rem(585);
             height: rem(467);
         }
+        &_3 {
+            background: linear-gradient(180deg, #0e1314 0%, rgba(14, 19, 20, 0.97) 56.25%, rgba(14, 19, 20, 0) 100%);
+            transform: rotate(-90deg);
+            width: 177px;
+            height: 571px;
+        }
+        &_4 {
+        }
     }
     &__item-image {
         width: rem(777);

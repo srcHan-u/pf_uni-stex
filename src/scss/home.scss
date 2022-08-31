@@ -93,6 +93,10 @@
         }
     }
     &__center {
+        &:not(:last-child) {
+            padding-bottom: rem(70);
+            margin-bottom: rem(45);
+        }
     }
     &__bottom {
     }
@@ -193,6 +197,40 @@
         line-height: math.div(21, 18);
         text-transform: uppercase;
         color: #ebe7e5;
+    }
+}
+
+.bottom-products {
+    &__container {
+        max-width: rem(1143);
+        text-align: center;
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: rem(43);
+        line-height: math.div(49, 42);
+        &:not(:last-child) {
+            margin-bottom: em(10, 43);
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: rem(26);
+        line-height: math.div(31, 26);
+        &:not(:last-child) {
+            margin-bottom: em(26, 26);
+        }
+    }
+
+    &__text-bold {
+        font-weight: 700;
+    }
+
+    &__button {
+        max-width: rem(233);
+        height: rem(44);
     }
 }
 

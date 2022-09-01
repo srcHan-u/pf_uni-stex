@@ -584,5 +584,81 @@
 
 //====================================================================================================
 
+.page {
+    &__faq {
+        @include adaptiveValue("padding-top", 125, 100);
+        padding-bottom: rem(80);
+    }
+}
+.faq {
+    &__container {
+        max-width: rem(1575);
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: rem(19);
+    }
+
+    &__heading {
+        font-weight: 400;
+        font-size: rem(50);
+        line-height: 1;
+        /* or 24% */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: $mainColorGrey;
+    }
+    &__spollers {
+        width: 100%;
+    }
+}
+.faq-spollers {
+    &__item {
+        padding-bottom: rem(15);
+        &:not(:last-child) {
+            margin-bottom: rem(20);
+        }
+        border-bottom: 1px solid #ebe7e5;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: rem(26);
+        line-height: 1;
+        color: $mainColorGreen;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        position: relative;
+        width: 100%;
+        &::before {
+            transition: transform 0.4s ease 0s;
+            font-size: rem(24);
+        }
+        &._spoller-active {
+            &::before {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__body {
+        padding-top: rem(20);
+        padding-bottom: rem(26);
+    }
+    &__description {
+        font-weight: 400;
+        font-size: rem(26);
+        line-height: 1;
+        color: $mainColorGrey;
+    }
+}
+
 //====================================================================================================
 //====================================================================================================

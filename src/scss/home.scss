@@ -294,6 +294,7 @@
 }
 
 //====================================================================================================
+
 .page {
     &__separator {
         padding-top: rem(40);
@@ -458,5 +459,83 @@
 }
 
 //====================================================================================================
+.page {
+    &__section-7 {
+        @include adaptiveValue("padding-top", 123, 100);
+        padding-bottom: rem(80);
+    }
+}
+.section-7 {
+    &__container {
+        max-width: rem(1276);
+    }
 
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__image {
+        flex: 0 0 auto;
+    }
+
+    &__box {
+        flex: 0 1 rem(560);
+        text-align: right;
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: rem(48);
+        line-height: math.div(55, 38);
+        &:not(:last-child) {
+            margin-bottom: em(10, 48);
+        }
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: rem(20);
+        line-height: math.div(23, 20);
+        max-width: em(470, 20);
+        margin-left: auto;
+        &:not(:last-child) {
+            margin-bottom: em(32, 20);
+        }
+    }
+
+    &__button {
+        max-width: rem(234);
+        width: 100%;
+        height: rem(55);
+        background-color: #0e1314;
+        border: 1px solid #fff;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0px 0px 0px auto;
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            font-size: rem(30);
+        }
+        span {
+            font-weight: 400;
+            font-size: rem(12);
+            line-height: math.div(12, 12);
+        }
+    }
+}
+
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================================================================================
 //====================================================================================================

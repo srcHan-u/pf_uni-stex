@@ -110,8 +110,11 @@ class Popup {
 		document.addEventListener("click", function (e) {
 			// Клик по кнопке "открыть"
 			const buttonOpen = e.target.closest(`[${this.options.attributeOpenButton}]`);
+            console.log(e)
+            console.log(buttonOpen)
 			if (buttonOpen) {
 				e.preventDefault();
+
 				this._dataValue = buttonOpen.getAttribute(this.options.attributeOpenButton) ?
 					buttonOpen.getAttribute(this.options.attributeOpenButton) :
 					'error';
@@ -119,6 +122,7 @@ class Popup {
 					buttonOpen.getAttribute(this.options.youtubeAttribute) :
 					null;
 				if (this._dataValue !== 'error') {
+
 					if (!this.isOpen) this.lastFocusEl = buttonOpen;
 					this.targetOpen.selector = `${this._dataValue}`;
 					this._selectorOpen = true;

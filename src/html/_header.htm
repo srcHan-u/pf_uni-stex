@@ -4,33 +4,41 @@
       <img src="@img/svg/logo.svg" alt="logo" class="logo__image" />
     </a>
     <div class="header__inner">
-        <ul class="header__actions">
-          <li class="header__action">
-            <button type="button" class="header__buttn">LOGIN</button>
-          </li>
-          <li class="header__action">
-            <button type="button" class="header__buttn header__buttn_focus">REGISTRATION</button>
-          </li>
-        </ul>
-        <div data-spollers class="switch-lang">
-          <div class="switch-lang__body">
-            <button type="button" data-spoller class="switch-lang__title _icon-arrow">
-                en
-            </button>
-            <ul class="switch-lang__list">
-                <li class="switch-lang__item">
-                    <a href="#" class="switch-lang__lang">ru</a>
-                </li>
-                <li class="switch-lang__item">
-                    <a href="#" class="switch-lang__lang">ua</a>
-                </li>
-                <li class="switch-lang__item">
-                    <a href="#" class="switch-lang__lang">en</a>
-                </li>
-            </ul>
-          </div>
+      <ul class="header__actions">
+        <li class="header__action">
+          <button type="button" class="header__button">LOGIN</button>
+        </li>
+        <li class="header__action">
+          <button type="button" class="header__button header__button_focus">
+            REGISTRATION
+          </button>
+        </li>
+      </ul>
+      <button type="button" class="header__burger-icon" data-popup="#popup">
+        <img src="@img/svg/burger-icon.svg" alt="image" />
+      </button>
+      <div data-spollers class="switch-lang">
+        <div class="switch-lang__body">
+          <button
+            type="button"
+            data-spoller
+            class="switch-lang__title _icon-arrow"
+          >
+            en
+          </button>
+          <ul class="switch-lang__list">
+            <li class="switch-lang__item">
+              <a href="#" class="switch-lang__lang">ru</a>
+            </li>
+            <li class="switch-lang__item">
+              <a href="#" class="switch-lang__lang">ua</a>
+            </li>
+            <li class="switch-lang__item">
+              <a href="#" class="switch-lang__lang">en</a>
+            </li>
+          </ul>
         </div>
-
+      </div>
     </div>
   </div>
 </header>

@@ -28,8 +28,9 @@
         left: 20%;
     }
     &_position_xy_0-0 {
-        top: -20px;
-        left: 80px;
+        bottom: percent(20, 1351);
+        // 1351
+        left: percent(80, 1351);
     }
     &__body {
         position: relative;
@@ -41,23 +42,8 @@
     }
     &__item-shape {
         &_zero {
-            position: relative;
-            font-weight: 700;
-            @include adaptiveValue("font-size", 600, 500);
-            background-color: #2aa5a0;
-            background-image: linear-gradient(155.22deg, #4fffca -18.55%, #1e3a37 79.21%, #191a1a 110.38%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
         &_procent {
-            @include adaptiveValue("font-size", 255, 200);
-            font-weight: 700;
-            background: linear-gradient(321.21deg, #17e5ce 6.42%, #4fffca 67.35%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            position: absolute;
-            top: 35%;
-            left: 50%;
         }
     }
     &__item-shadow {
@@ -116,11 +102,8 @@
 
 .title {
     font-weight: 700;
-    @include adaptiveValue("font-size", 52, 45);
+    @include adaptiveValue("font-size", 52, 42);
     line-height: math.div(63, 52);
     text-transform: uppercase;
     color: $mainColorGrey;
 }
-
-
-

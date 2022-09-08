@@ -320,7 +320,7 @@
         font-weight: 700;
         line-height: math.div(219, 189);
         text-transform: uppercase;
-        @include adaptiveValue("font-size", 180, 90);
+        @include adaptiveValue("font-size", 180, 140);
         background: linear-gradient(96deg, #4fffca 11.58%, #17e5d0 45.09%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -486,10 +486,6 @@
     &__button {
         max-width: rem(323);
         height: rem(58);
-    }
-}
-.button-primary {
-    &__text {
     }
 }
 

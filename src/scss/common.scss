@@ -118,6 +118,8 @@
         flex-direction: column;
     }
     &__title {
+        animation: text-flicker-out-glow 2.5s linear infinite both;
+
         @media (max-width: $mobile) {
             text-align: center;
         }
@@ -142,11 +144,14 @@
             position: absolute;
             top: 35%;
             left: 50%;
+            animation: n;
         }
     }
     &__button {
         max-width: rem(181);
         height: rem(44);
+        position: relative;
+        z-index: 3;
         @media (max-width: $mobile) {
             max-width: none;
         }
@@ -166,7 +171,14 @@
             max-width: rem(775);
             top: 0;
             left: 100%;
-            transform: translateX(-70%);
+            transform: translateX(-80%);
+            z-index: 2;
+            @media (max-width: $mobile) {
+                max-width: rem(455);
+                // left: -10%;
+                @include adaptiveValue("left", 10, -150, 767, 320);
+                transform: translateX(0);
+            }
         }
         &_2 {
             max-width: rem(333);
@@ -223,6 +235,11 @@
             height: percent(522, 600);
             top: 0;
             left: 100%;
+            @media (max-width: $mobile) {
+                top: 0;
+                left: 40%;
+                max-width: rem(300);
+            }
         }
         &_2 {
             max-width: rem(585);
@@ -264,6 +281,7 @@
     -webkit-text-fill-color: transparent;
     mix-blend-mode: screen;
     text-align: center;
+    animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .card-product {
     display: flex;

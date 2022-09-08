@@ -18,14 +18,11 @@
         top: 0;
         right: 0;
     }
-    &__content {
-    }
-
-    &__title {
-    }
-    &__element {
-    }
-    &__button {
+    &__zero-block {
+        margin-right: rem(100);
+        @media (max-width: $mobile) {
+            margin-right: 0;
+        }
     }
 }
 
@@ -130,6 +127,11 @@
         flex: 0 1 30%;
         // min-width: rem(340);
         // min-height: rem(320);
+        @for $var from 1 to 6 {
+            &:nth-child(#{$var}) {
+                animation: slide-in-blurred-top 1.3s cubic-bezier(0.23, 1, 0.32, 1) calc($var / 5) + 1s both;
+            }
+        }
         @media (max-width: $mobileSmall) {
             flex: 0 1 auto;
         }

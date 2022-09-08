@@ -332,6 +332,7 @@
         line-height: math.div(68, 67);
         text-transform: uppercase;
         color: #ebe7e5;
+        animation: text-flicker-out-glow 2.5s linear infinite both;
         @media (max-width: $tablet) {
             &:not(:last-child) {
                 margin-bottom: rem(40);

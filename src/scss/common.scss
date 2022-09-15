@@ -92,6 +92,8 @@
     width: 100%;
     position: relative;
     z-index: 3;
+    border: 1px solid transparent;
+    transition: border 0.4s ease 0s, background-color 0.4s ease 0s;
     &__text {
         font-weight: 700;
         font-size: rem(14);
@@ -99,6 +101,16 @@
         text-align: center;
         text-transform: uppercase;
         color: #192227;
+        transition: color 0.4s ease 0s;
+    }
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $mainColorGreen;
+            .button-primary__text {
+                color: $mainColor;
+            }
+        }
     }
 }
 

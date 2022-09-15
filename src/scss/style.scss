@@ -136,6 +136,72 @@ body {
     }
 }
 
+.page {
+    &__first-screen {
+        padding-top: rem(10);
+        @include adaptiveValue("padding-bottom", 157, 80);
+    }
+    &__section-2 {
+        @include adaptiveValue("padding-top", 208, 92);
+        @include adaptiveValue("padding-bottom", 127, 589);
+        background-image: url("@img/home/section-2-bg.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: cover;
+        @media (max-width: $mobile) {
+            background-position: left bottom;
+            background-size: 850px;
+        }
+    }
+    &__products {
+        @include adaptiveValue("padding-top", 128, 100);
+        @include adaptiveValue("padding-bottom", 85, 148);
+    }
+    &__separator {
+        @include adaptiveValue("padding-top", 40, 0);
+        @include adaptiveValue("padding-bottom", 53, 0);
+        background-image: url("@img/home/divider-image_bg.png");
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: 50% 100%;
+    }
+    &__partners {
+        @include adaptiveValue("padding-top", 105, 100);
+        @include adaptiveValue("padding-bottom", 135, 100);
+    }
+    &__section-6 {
+        background-color: #192227;
+        @include adaptiveValue("padding-top", 65, 121);
+        @include adaptiveValue("padding-bottom", 65, 196);
+    }
+    &__section-7 {
+        @include adaptiveValue("padding-top", 123, 197);
+        padding-bottom: rem(80);
+        @media (max-width: $mobileSmall) {
+            padding-bottom: rem(89);
+        }
+        background-color: #0e1314;
+    }
+    &__section-8 {
+        @include adaptiveValue("padding-top", 136, 159);
+        @include adaptiveValue("padding-bottom", 100, 303);
+        background-image: url("@img/home/section-8_bg.png");
+        background-position: right bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #020001;
+        @media (max-width: $tablet) {
+            background-size: 700px;
+        }
+        @media (max-width: $mobileSmall) {
+            background-size: 500px;
+        }
+    }
+    &__faq {
+        @include adaptiveValue("padding-top", 125, 100);
+        @include adaptiveValue("padding-bottom", 80, 50);
+    }
+}
 // Подключение базовых стилей, шаблонов (заготовок) и вспомогательных  классов
 // Для подключения/отключения конкретных стилей смотри base.scss
 @import "base";

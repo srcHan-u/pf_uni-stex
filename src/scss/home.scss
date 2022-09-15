@@ -419,6 +419,8 @@
     }
 
     &__content {
+        position: relative;
+        z-index: 2;
     }
     &__background-block {
         // top: 0;
@@ -486,6 +488,9 @@
     &__button {
         max-width: rem(323);
         height: rem(58);
+        @media (max-width: $mobileSmall) {
+            max-width: none;
+        }
     }
 }
 

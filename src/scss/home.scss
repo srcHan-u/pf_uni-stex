@@ -519,6 +519,7 @@
         flex: 0 0 auto;
         position: relative;
         z-index: 1;
+        display: inline-block;
         @media (max-width: $mobile) {
             display: none;
         }
@@ -527,6 +528,8 @@
     &__box {
         flex: 0 1 rem(560);
         text-align: right;
+        position: relative;
+        z-index: 2;
     }
 
     &__heading {
@@ -573,6 +576,9 @@
         align-items: center;
         position: relative;
         margin: 0px 0px 0px auto;
+        @media (max-width: $mobileSmall) {
+            max-width: none;
+        }
         &::before {
             position: absolute;
             top: 50%;

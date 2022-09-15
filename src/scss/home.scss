@@ -595,12 +595,11 @@
         @include adaptiveValue("padding-top", 136, 159);
         @include adaptiveValue("padding-bottom", 100, 303);
         background-image: url("@img/home/section-8_bg.png");
-        background-position: right center;
+        background-position: right bottom;
         background-size: contain;
         background-repeat: no-repeat;
         background-color: #020001;
         @media (max-width: $tablet) {
-            background-position: center bottom;
             background-size: 700px;
         }
         @media (max-width: $mobileSmall) {

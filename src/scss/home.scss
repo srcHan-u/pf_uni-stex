@@ -27,7 +27,6 @@
         justify-content: flex-end;
         align-items: center;
         position: relative;
-        
     }
     &__content {
         flex: 0 1 rem(864);
@@ -104,7 +103,7 @@
         // min-height: rem(320);
         @for $var from 1 to 6 {
             &:nth-child(#{$var}) {
-                animation: slide-in-blurred-top 1.3s cubic-bezier(0.23, 1, 0.32, 1) calc($var / 5) + 1s both;
+                // animation: slide-in-blurred-top 1.3s cubic-bezier(0.23, 1, 0.32, 1) calc($var / 5) + 1s both;
             }
         }
         @media (max-width: $mobileSmall) {
@@ -303,7 +302,6 @@
         line-height: math.div(68, 67);
         text-transform: uppercase;
         color: #ebe7e5;
-        animation: text-flicker-out-glow 2.5s linear infinite both;
         @media (max-width: $tablet) {
             &:not(:last-child) {
                 margin-bottom: rem(40);
@@ -312,8 +310,8 @@
     }
 
     &__image {
-        animation: tilt-in-bl_2 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
         max-width: rem(334);
+        display: inline-block;
         @media (max-width: $tablet) {
             display: none;
         }
@@ -478,7 +476,9 @@
 }
 
 //====================================================================================================
-
+.some-image {
+    display: inline-block;
+}
 .section-7 {
     &__container {
         max-width: rem(1276);
@@ -498,7 +498,7 @@
         flex: 0 0 auto;
         position: relative;
         z-index: 1;
-        display: inline-block;
+        display: block;
         @media (max-width: $mobile) {
             display: none;
         }

@@ -19,6 +19,7 @@
 		"bem": "fls-bemtree-from-html"
 	},
 	"devDependencies": {
+		"animate.css": "^4.1.1",
 		"copy-webpack-plugin": "latest",
 		"css-loader": "latest",
 		"del": "^6.1.1",
@@ -69,7 +70,8 @@
 		"webpack": "latest",
 		"webpack-cli": "latest",
 		"webpack-dev-server": "latest",
-		"webpack-stream": "latest"
+		"webpack-stream": "latest",
+		"wow.js": "^1.2.2"
 	},
 	"dependencies": {
 		"simplebar": "latest"

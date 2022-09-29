@@ -12,14 +12,3 @@ window.addEventListener('load', () => {
     });
     config.init();
 })
-// console.log(WOW)
-
-// const config = new WOW(
-//     {
-//         boxClass: 'anim',
-//         nimateClass: 'animated'
-//     }
-// )
-
-// config.init()
-// console.log(config)

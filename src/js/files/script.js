@@ -4,3 +4,4 @@ import { isMobile } from "./functions.js";
 import { flsModules } from "./modules.js";
 
 import './anim.js'
+// import './scroll/smooth-scroll.js'

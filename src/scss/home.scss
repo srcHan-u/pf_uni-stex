@@ -49,11 +49,6 @@
     }
 }
 
-.button-primary {
-    &__text {
-    }
-}
-
 //====================================================================================================
 
 .products {
@@ -68,13 +63,8 @@
             margin-bottom: rem(45);
         }
     }
-    &__bottom {
-    }
 }
 .top-products {
-    &__container {
-    }
-
     &__heading {
         &:not(:last-child) {
             margin-bottom: em(102, 180);
@@ -87,7 +77,6 @@
         justify-content: center;
         flex-wrap: wrap;
         row-gap: rem(105);
-        // column-gap: rem(30);
         column-gap: rem(30);
         @media (max-width: $mobile) {
             row-gap: rem(30);
@@ -99,19 +88,9 @@
 
     &__item {
         flex: 0 1 30%;
-        // min-width: rem(340);
-        // min-height: rem(320);
-        @for $var from 1 to 6 {
-            &:nth-child(#{$var}) {
-                // animation: slide-in-blurred-top 1.3s cubic-bezier(0.23, 1, 0.32, 1) calc($var / 5) + 1s both;
-            }
-        }
         @media (max-width: $mobileSmall) {
             flex: 0 1 auto;
         }
-    }
-
-    &__card {
     }
 }
 
@@ -292,9 +271,6 @@
     &__inner {
         display: flex;
         align-items: center;
-        // @media (max-width:$tablet){
-
-        // }
     }
     &__title {
         font-weight: 700;
@@ -352,8 +328,6 @@
         &::-webkit-scrollbar-thumb {
             background-color: $mainColorGrey;
             border-radius: 10px;
-            // width: rem(2);
-            // height: rem(1);
         }
         @media (max-width: $mobile) {
             &::-webkit-scrollbar {
@@ -368,11 +342,7 @@
         align-items: center;
         flex-wrap: nowrap;
         width: rem(1790);
-        // flex-wrap: wrap;
-        // display: grid;
-        // grid-template-columns: repeat(auto-fit, minmax(60px, 200px));
         column-gap: rem(15);
-        // row-gap: rem(30);
         margin: 0 auto;
         padding-bottom: rem(25);
     }
@@ -384,8 +354,6 @@
 
     &__image {
         width: 100%;
-    }
-    &__bg-element {
     }
 }
 
@@ -402,10 +370,6 @@
     &__content {
         position: relative;
         z-index: 2;
-    }
-    &__background-block {
-        // top: 0;
-        // left: 100%;
     }
     &__heading {
         font-weight: 400;

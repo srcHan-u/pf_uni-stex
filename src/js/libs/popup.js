@@ -110,8 +110,6 @@ class Popup {
 		document.addEventListener("click", function (e) {
 			// Клик по кнопке "открыть"
 			const buttonOpen = e.target.closest(`[${this.options.attributeOpenButton}]`);
-            console.log(e)
-            console.log(buttonOpen)
 			if (buttonOpen) {
 				e.preventDefault();
 

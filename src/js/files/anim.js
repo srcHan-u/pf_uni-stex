@@ -8,7 +8,6 @@ window.addEventListener('load', () => {
     const config = new WOW({
         boxClass: 'anim',
         animateClass: 'animate__animated'
-        // resetAnimation: false
     });
     config.init();
 })

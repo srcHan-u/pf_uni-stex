@@ -39,15 +39,15 @@
           </div>
         </section>
 
-        <div class="page__section-2 section-2">
-          <div class="section-2__container">
-            <div class="section-2__background-block background-block">
+        <div class="page__promo promo">
+          <div class="promo__container">
+            <div class="promo__background-block background-block">
               <div
                 class="background-block__item-shadow background-block__item-shadow_2"
               ></div>
             </div>
-            <div class="section-2__content">
-              <p class="section-2__description">
+            <div class="promo__content">
+              <p class="promo__description">
                 Estonian Financial Intelligence Unit <br />
                 (FIU, or RAB in Estonian) is responsible for overseeing crypto
                 <br />
@@ -55,7 +55,8 @@
               </p>
               <button
                 type="button"
-                class="section-2__button button-primary"
+                class="promo__button button-primary"
+                data-popup="#popup"
               >
                 <span class="button-primary__text">TRADING</span>
               </button>
@@ -261,6 +262,7 @@
               <button
                 type="button"
                 class="bottom-products__button button-primary"
+                data-popup="#popup"
               >
                 <span class="button-primary__text">REGISTRATION</span>
               </button>
@@ -287,6 +289,7 @@
               <button
                 type="button"
                 class="separator__button button-primary"
+                data-popup="#popup"
               >
                 <span class="button-primary__text">BUY BITCOIN</span>
               </button>
@@ -371,9 +374,9 @@
             make background and shadow;
             rename 
          -->
-        <section class="page__section-6 section-6">
-          <div class="section-6__container">
-            <div class="section-6__background-block background-block">
+        <div class="page__benefits benefits">
+          <div class="benefits__container">
+            <div class="benefits__background-block background-block">
               <div
                 class="background-block__item-shadow background-block__item-shadow_3"
               ></div>
@@ -385,36 +388,40 @@
                 5
               </div>
             </div>
-            <div class="section-6__content">
-              <h2 class="section-6__heading">
+            <div class="benefits__content">
+              <h2 class="benefits__heading">
                 ADJUSTABLE <span>EXCHANGE</span>
               </h2>
-              <ul class="section-6__list">
-                <li class="section-6__item">
+              <ul class="benefits__list">
+                <li class="benefits__item">
                   MODERN TRADING <span>TERMINAL</span>
                 </li>
-                <li class="section-6__item"><span>0% DEPOSIT FEES</span></li>
-                <li class="section-6__item">
+                <li class="benefits__item"><span>0% DEPOSIT FEES</span></li>
+                <li class="benefits__item">
                   MULTILEVEL <span>REFERRAL PROGRAM</span>
                 </li>
-                <li class="section-6__item">
+                <li class="benefits__item">
                   MODERN TRADING <span>TERMINAL</span>
                 </li>
-                <li class="section-6__item">
+                <li class="benefits__item">
                   <span>FAST</span> CRYPTOCURRENCY <br />
                   EXCHANGE <span>WITHOUT REGISTRATION</span>
                 </li>
-                <li class="section-6__item"><span>27/7 SUPPORT</span></li>
+                <li class="benefits__item"><span>27/7 SUPPORT</span></li>
               </ul>
-              <button type="button" class="section-6__button button-primary">
+              <button
+                type="button"
+                class="benefits__button button-primary"
+                data-popup="#popup"
+              >
                 <span class="button-primary__text">TRADING</span>
               </button>
             </div>
           </div>
-        </section>
-        <div class="page__section-7 section-7">
-          <div class="section-7__container">
-            <div class="section-7__background-block background-block">
+        </div>
+        <div class="page__download download">
+          <div class="download__container">
+            <div class="download__background-block background-block">
               <div
                 class="background-block__item-shadow background-block__item-shadow_4"
               ></div>
@@ -422,34 +429,38 @@
                 class="background-block__item-shape background-block__item-shape_2"
               ></div>
             </div>
-            <div class="section-7__body">
+            <div class="download__body">
               <img
-                class="section-7__image anim animate__zoomIn"
+                class="download__image anim animate__zoomIn"
                 data-src="@img/home/section-9-img_1.png"
                 alt="image"
                 data-wow-duration="1s"
                 data-wow-delay="1s"
               />
-              <div class="section-7__box">
-                <h2 class="section-7__heading">Trade Anytime Anywhere</h2>
-                <p class="section-7__description">
+              <div class="download__box">
+                <h2 class="download__heading">Trade Anytime Anywhere</h2>
+                <p class="download__description">
                   All UNI Stex services are always with you. Powerful platform
                   for cryptocurrency trading for those who trade to make money.
                   <br />
                   Download UNI Stex Cryptocurrency Mobile App Today.
                 </p>
-                <button type="button" class="section-7__button _icon-app-store">
+                <button
+                  type="button"
+                  class="download__button _icon-app-store"
+                  data-popup="#popupWarning"
+                >
                   <span>Download on the</span> App Store
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="page__section-8 section-8">
-          <div class="section-8__container">
-            <div class="section-8__content">
-              <h3 class="section-8__heading">Affiliate program</h3>
-              <p class="section-8__description">
+        <div class="page__about about">
+          <div class="about__container">
+            <div class="about__content">
+              <h3 class="about__heading">Affiliate program</h3>
+              <p class="about__description">
                 With the help of the UNI Stex service, you can not only
                 profitably exchange e-currency, but also make good money on it
                 <br />
@@ -457,7 +468,11 @@
                 You can receive the payment in any way convenient for you
                 presented in your personal account UNI Stex.
               </p>
-              <button type="button" class="section-8__button button-primary">
+              <button
+                type="button"
+                class="about__button button-primary"
+                data-popup="#popupWarning"
+              >
                 <span class="button-primary__text">LINK</span>
               </button>
             </div>
@@ -492,8 +507,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="faq-spollers__item anim animate__fadeInRightBig" data-wow-duration="1s"
-                data-wow-delay="0.8s">
+                <div
+                  class="faq-spollers__item anim animate__fadeInRightBig"
+                  data-wow-duration="1s"
+                  data-wow-delay="0.8s"
+                >
                   <button
                     type="button"
                     data-spoller
@@ -513,8 +531,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="faq-spollers__item anim animate__fadeInLeftBig" data-wow-duration="1s"
-                data-wow-delay="1.1s">
+                <div
+                  class="faq-spollers__item anim animate__fadeInLeftBig"
+                  data-wow-duration="1s"
+                  data-wow-delay="1.1s"
+                >
                   <button
                     type="button"
                     data-spoller
@@ -535,8 +556,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="faq-spollers__item anim animate__fadeInRightBig" data-wow-duration="1s"
-                data-wow-delay="1.4s">
+                <div
+                  class="faq-spollers__item anim animate__fadeInRightBig"
+                  data-wow-duration="1s"
+                  data-wow-delay="1.4s"
+                >
                   <button
                     type="button"
                     data-spoller
@@ -556,8 +580,11 @@
                     </p>
                   </div>
                 </div>
-                <div class="faq-spollers__item anim animate__fadeInLeftBig" data-wow-duration="1s"
-                data-wow-delay="1.7s">
+                <div
+                  class="faq-spollers__item anim animate__fadeInLeftBig"
+                  data-wow-duration="1s"
+                  data-wow-delay="1.7s"
+                >
                   <button
                     type="button"
                     data-spoller
@@ -578,9 +605,12 @@
                     </p>
                   </div>
                 </div>
-                <div class="faq-spollers__item anim animate__fadeInRightBig" data-wow-duration="1s"
-                data-wow-delay="2s">
-                  <button 
+                <div
+                  class="faq-spollers__item anim animate__fadeInRightBig"
+                  data-wow-duration="1s"
+                  data-wow-delay="2s"
+                >
+                  <button
                     type="button"
                     data-spoller
                     class="faq-spollers__title _icon-arrow"

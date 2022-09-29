@@ -159,7 +159,7 @@ body {
         padding-top: rem(10);
         @include adaptiveValue("padding-bottom", 157, 80);
     }
-    &__section-2 {
+    &__promo {
         @include adaptiveValue("padding-top", 208, 92);
         @include adaptiveValue("padding-bottom", 127, 589);
         background-image: url("@img/home/section-2-bg.png");
@@ -187,12 +187,12 @@ body {
         @include adaptiveValue("padding-top", 105, 100);
         @include adaptiveValue("padding-bottom", 135, 100);
     }
-    &__section-6 {
+    &__benefits {
         background-color: #192227;
         @include adaptiveValue("padding-top", 65, 121);
         @include adaptiveValue("padding-bottom", 65, 196);
     }
-    &__section-7 {
+    &__download {
         @include adaptiveValue("padding-top", 123, 197);
         padding-bottom: rem(80);
         @media (max-width: $mobileSmall) {
@@ -200,7 +200,7 @@ body {
         }
         background-color: #0e1314;
     }
-    &__section-8 {
+    &__about {
         @include adaptiveValue("padding-top", 136, 159);
         @include adaptiveValue("padding-bottom", 100, 303);
         background-image: url("@img/home/section-8_bg.png");

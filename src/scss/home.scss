@@ -20,7 +20,7 @@
     }
 }
 
-.section-2 {
+.promo {
     &__container {
         max-width: rem(1574);
         display: flex;
@@ -391,7 +391,7 @@
 
 //====================================================================================================
 
-.section-6 {
+.benefits {
     overflow: hidden;
     &__container {
         max-width: rem(1351);
@@ -479,7 +479,7 @@
 .some-image {
     display: inline-block;
 }
-.section-7 {
+.download {
     &__container {
         max-width: rem(1276);
         position: relative;
@@ -575,7 +575,7 @@
 
 //====================================================================================================
 
-.section-8 {
+.about {
     &__container {
         max-width: rem(1351);
         @media (max-width: $mobileSmall) {
